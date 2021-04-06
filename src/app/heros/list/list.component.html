@@ -1,11 +1,9 @@
 <p>Listado Heroes</p>
 
 
-<div>
-    <h3>
-        Heroe Borrado
-    </h3>
-    <span>{{heroDelete}}</span>
+<div *ngIf="heroDelete">
+    <h3> Heroe Borrado : <small>{{heroDelete}}</small></h3>
+
 </div>
 
 <button (click)='DeleteHero()'>
