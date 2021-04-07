@@ -6,6 +6,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { PersonagesComponent } from './personages/personages.component';
 import { AddPersonagesComponent } from './add-personages/add-personages.component';
 
+import { DbzService } from './services/dbz.service';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,9 @@ import { AddPersonagesComponent } from './add-personages/add-personages.componen
   imports: [
     CommonModule,
     FormsModule
+  ],
+  providers: [
+    DbzService
   ]
 
 })
