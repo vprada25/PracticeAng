@@ -5,29 +5,12 @@
     <div class="col">
         <app-personages [Data]="personajes">
 
-        </app-personages >
-        <!--  <h3>Personajes</h3>
-        <hr>
-        <ul *ngFor="let personaje of personajes">
-           {{personaje.name}} - {{personaje.can | number}}
-        </ul>
-        
- -->
+        </app-personages>
     </div>
     <div class="col">
-        <h3>Agregar</h3>
-        <hr>
-        <form (ngSubmit)='addfighter(  )'>
+        <app-add-personages [nuevo]="nuevo"
+        (onNewCharacter)="newCharacter( $event )">
 
-            <input type="text" placeholder="Nombre" name="name" [(ngModel)]="nuevo.name">
-
-            <!-- [value]= "nuevo.name" -->
-
-            <input type="number" placeholder="Poder" name="can" [(ngModel)]="nuevo.can">
-
-            <button type="submit">
-                Agregar
-            </button>
-        </form>
+        </app-add-personages>
     </div>
 </div>

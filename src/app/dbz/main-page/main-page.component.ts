@@ -22,17 +22,17 @@ export class MainPageComponent {
   ]
 
   nuevo: Personaje = {
-    name: '',
+    name: 'Maestro Victor',
     can: 0
   }
 
-  addfighter() {
-    if (this.nuevo.name.trim().length === 0) { return }
-    this.personajes.push(this.nuevo)
-    this.nuevo = {
-      name: '',
-      can: 0
-    }
+  newCharacter(arg: Personaje) {
+    this.personajes.push(arg)
+    console.log(arg)
   }
+
+
+
+
 
 }
