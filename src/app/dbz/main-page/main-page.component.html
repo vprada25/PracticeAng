@@ -1,3 +1,41 @@
 <h1>Dragon Ball Z</h1>
-
 <hr>
+
+<div class="row">
+    <div class="col">
+        <h3>Agregar</h3>
+        <hr>
+        <ul>
+            Krilin - 700
+        </ul>
+        <ul>
+            Goku - 1700
+        </ul>
+        <ul>
+            Vegeta - 1000
+        </ul>
+
+    </div>
+    <div class="col">
+        <h3>Agregar</h3>
+        <hr>
+        <form (ngSubmit)='addfighter(  )'>
+
+            <input 
+            type="text" placeholder="Nombre" 
+            name="name" 
+            [(ngModel)]="nuevo.name">
+
+            <!-- [value]= "nuevo.name" -->
+
+            <input type="number" 
+            placeholder="Poder" 
+            name="can" 
+            [(ngModel)]="nuevo.can">
+
+            <button type="submit">
+                Agregar
+            </button>
+        </form>
+    </div>
+</div>
