@@ -14,8 +14,6 @@ import { Component } from '@angular/core'
     <button (click)="acumular(-Base)"> -{{Base}} </button>
 
   `
-
-
 })
 
 

@@ -2,19 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CountComponent } from './count/count.component';
-import { HeroComponent } from './heros/hero/hero.component';
-import { ListComponent } from './heros/list/list.component';
+
+import { HerosMOdule } from './heros/heros.module';
+import { CountModule } from './count/count.module';
+import { DbzModule } from './dbz/dbz.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CountComponent,
-    HeroComponent,
-    ListComponent
+    AppComponent
+    
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HerosMOdule,
+    CountModule,
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
